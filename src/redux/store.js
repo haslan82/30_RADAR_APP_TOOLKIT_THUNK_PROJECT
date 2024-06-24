@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import classicReducer from "./slices/classicSlice";
-
+import flight from "./slices/flightSlice";
 
 export default configureStore({
-    reducer: classicReducer,
-})
+  reducer: { flight },
+});

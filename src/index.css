@@ -24,9 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background-color: #242424 ;
+  color: rgba(255, 255, 255, 0.87) ;
   min-height: 100vh;
 }
 
@@ -65,4 +64,57 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* stiller */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+header img{
+  height: 50px;
+}
+header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.view-buttons button:first-child{
+  border-radius: 6px 0 0 6px;
+}
+.view-buttons button:last-child{
+  border-radius: 0 6px 6px 0;
+}
+.active{
+  background: #535bf2;
+}
+
+.leaflet-container{
+  height: 80vh;
+  margin-top: 30px;
+}
+
+.detail-outer{
+  position: fixed;
+  top: 0;
+  background-color: red;
+  z-index: 9999;
+  height: 100vh;
+  left: 0;
 }
