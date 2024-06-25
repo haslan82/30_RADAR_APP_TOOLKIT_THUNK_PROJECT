@@ -12,7 +12,7 @@ function App() {
 
   // detayı gösterilecek elemanın  id si
   const [detailId, setDetailId] = useState(null);
-//! console.log(detailId)
+  //! console.log(detailId)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,6 +22,7 @@ function App() {
   return (
     <div>
       <Header />
+
       <div className="view-buttons">
         <button
           onClick={() => setIsMapView(true)}
@@ -30,15 +31,22 @@ function App() {
           Harita Görünümü
         </button>
         <button
-          onClick={() => setIsMapView(false)}
           className={isMapView ? "" : "active"}
+          onClick={() => setIsMapView(false)}
         >
           Liste Görünümü
         </button>
       </div>
 
-      {isMapView ? <MapView /> : <ListView setDetailId={setDetailId} />}
-      {detailId && <Modal detailId ={detailId} />}
+      {isMapView ? (
+        <MapView setDetailId={setDetailId} />
+      ) : (
+        <ListView setDetailId={setDetailId} />
+      )}
+
+      {detailId && (
+        <Modal detailId={detailId} close={() => setDetailId(null)} />
+      )}
     </div>
   );
 }

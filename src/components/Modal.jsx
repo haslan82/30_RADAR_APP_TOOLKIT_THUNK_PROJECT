@@ -4,7 +4,7 @@ import { dOptions } from "../constants";
 import { useDispatch } from "react-redux";
 import { setPath } from "../redux/slices/flightSlice";
 import formatDate from "../utils/formatDate";
-const Modal = ({ detailId }) => {
+const Modal = ({ detailId, close }) => {
   //! console.log(detailId)
 
  const dispatch = useDispatch();
@@ -12,6 +12,11 @@ const Modal = ({ detailId }) => {
   const [d, setDetail] = useState(null);
 
   useEffect(() => {
+
+// önceki uçuşun detaylarını sıfırla
+setDetail(null);
+
+
     axios
       .get(
         `https://flight-radar1.p.rapidapi.com/flights/detail?flight=${detailId} `,
@@ -24,7 +29,7 @@ const Modal = ({ detailId }) => {
         dispatch(setPath(res.data.trail));
       });
   }, [detailId]);
-console.log(d)
+//! console.log(d)
 return (
     <div className="detail-outer">
       <div className="detail-inner">

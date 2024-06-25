@@ -14,9 +14,18 @@ export const options = {
     },
   };
 
+  // export const dOptions = {
+  //   headers: {
+  //     'x-rapidapi-key': '4881877b7fmsh063d77fae5a42d9p1be6e9jsn8d4ae58e7971',
+  //     'x-rapidapi-host': 'flight-radar1.p.rapidapi.com'
+  //   }
+  // }
+
+
   export const dOptions = {
     headers: {
-      'x-rapidapi-key': '4881877b7fmsh063d77fae5a42d9p1be6e9jsn8d4ae58e7971',
-      'x-rapidapi-host': 'flight-radar1.p.rapidapi.com'
-    }
-  }
+      "x-rapidapi-key": "92f8a72de5msh9603ca7bfc2c56fp1356f9jsn1db464323983",
+      "x-rapidapi-host": "flight-radar1.p.rapidapi.com",
+    },
+  };
+  
