@@ -44,7 +44,7 @@ return (
             <h2>{d.aircraft.model.code}</h2>
 
             <p>
-              <span>Kuyruk Kodu</span>
+              <span>Kuyruk Kodu : </span>
               <span>{d.aircraft.registration}</span>
             </p>
 
@@ -62,25 +62,25 @@ return (
             )}
 
             <p>
-              <span>Şirket:</span>
+              <span>Şirket : </span>
               <span>{d.airline?.short}</span>
             </p>
 
             <p>
-              <span>Kalkış:</span>
+              <span>Kalkış : </span>
               <a href={d.airport?.origin?.website} target="_blank">
                 {d.airport?.origin?.name}
               </a>
             </p>
             <p>
-              <span>İniş:</span>
+              <span>İniş : </span>
               <a href={d.airport?.destination?.website} target="_blank">
                 {d.airport?.destination?.name}
               </a>
             </p>
 
             <p>
-              <span>Kalkış Zamanı</span>
+              <span>Kalkış Zamanı : </span>
               <span>
                 {d.time?.scheduled?.departure > 0
                   ? formatDate(d.time?.scheduled?.departure)
@@ -88,7 +88,7 @@ return (
               </span>
             </p>
             <p>
-              <span>İniş Zamanı</span>
+              <span>İniş Zamanı : </span>
               <span>
                 {d.time?.scheduled?.departure > 0
                   ? formatDate(d.time?.scheduled?.arrival)
