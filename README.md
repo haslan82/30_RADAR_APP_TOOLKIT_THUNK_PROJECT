@@ -25,7 +25,7 @@ With the Radar Application, which is compatible with every screen, where you can
 
 # GIF
 
-    ![](./public/RADAR%20APP%20GIF.gif)
+    ![](./public/GIF.gif)
 
 ##  Designed by <a href="https://www.linkedin.com/in/h%C3%BCseyin-aslan-128519203/" target="_blank">Hüseyin ASLAN</a> 
     
