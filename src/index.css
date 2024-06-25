@@ -243,7 +243,25 @@ border-radius: 8px;
   transform-origin: top left;
   filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
 }
+.kayan-yazi-container {
+  width: 50%; /* Container'ı ekran genişliğine yay */
+  overflow: hidden; /* Taşan kısımları gizle */
+}
 
+.kayan-yazi {
+  font-size: 36px;
+  text-align: center;
+  position: relative; /* Pozisyonu belirle */
+  animation: kayanYazi 10s linear infinite; /* Animasyonu tanımla */
+}
+@keyframes kayanYazi {
+  0% {
+    left: 100%; /* Başlangıç pozisyonu, sağdan başlasın */
+  }
+  100% {
+    left: -100%; /* Bitiş pozisyonu, soldan kaybolsun */
+  }
+}
 @keyframes radar81 {
   0% {
     transform: rotate(0deg);

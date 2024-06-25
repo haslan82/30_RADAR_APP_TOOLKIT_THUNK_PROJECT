@@ -8,24 +8,25 @@ export const options = {
       tr_lng: "44.827639",
       limit: "300",
     },
+
     headers: {
-      "x-rapidapi-key": "17bfa31bbbmsh1355592a7405f9bp1dd229jsnd7e87c1e1260",
-      "x-rapidapi-host": "flight-radar1.p.rapidapi.com",
-    },
+      'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+      'x-rapidapi-host': 'flight-radar1.p.rapidapi.com'
+    }
+    
   };
-
-  // export const dOptions = {
-  //   headers: {
-  //     'x-rapidapi-key': '4881877b7fmsh063d77fae5a42d9p1be6e9jsn8d4ae58e7971',
-  //     'x-rapidapi-host': 'flight-radar1.p.rapidapi.com'
-  //   }
-  // }
-
 
   export const dOptions = {
     headers: {
-      "x-rapidapi-key": "92f8a72de5msh9603ca7bfc2c56fp1356f9jsn1db464323983",
-      "x-rapidapi-host": "flight-radar1.p.rapidapi.com",
-    },
-  };
-  
+      'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+      'x-rapidapi-host': 'flight-radar1.p.rapidapi.com'
+    }
+  }
+
+
+  // headers: {
+    //   "x-rapidapi-key": "17bfa31bbbmsh1355592a7405f9bp1dd229jsnd7e87c1e1260",
+    //   "x-rapidapi-host": "flight-radar1.p.rapidapi.com",
+    // },
+
+

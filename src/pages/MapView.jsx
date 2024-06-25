@@ -22,7 +22,7 @@ const MapView = ({setDetailId}) => {
   return (
     <MapContainer
       center={[40, 35]}
-      zoom={5}
+      zoom={6}
       scrollWheelZoom={true}
       className="leaflet-container"
     >
