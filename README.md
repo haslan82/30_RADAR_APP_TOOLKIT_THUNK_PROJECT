@@ -18,16 +18,16 @@ With the Radar Application, which is compatible with every screen, where you can
 - "@reduxjs/toolkit"
    
    
-# API
+### API
 
 - https://rapidapi.com/apidojo/api/flight-radar1 
 
 
-# GIF
+## Gif
 
 ![](/public/GIF.gif)
 
-##  Designed by <a href="https://www.linkedin.com/in/h%C3%BCseyin-aslan-128519203/" target="_blank">Hüseyin ASLAN</a> 
+###  Designed by <a href="https://www.linkedin.com/in/h%C3%BCseyin-aslan-128519203/" target="_blank">Hüseyin ASLAN</a> 
     
     
     
